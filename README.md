@@ -11,3 +11,5 @@ In this project we extracted the data from flipkart by auto launching the websit
 
 ◻ Store the Data Extracted
 
+### Explanation Video link: [Click here for drive link](https://drive.google.com/file/d/1H_mxfNU5UwRU7Ixojw-6CPbnG2lXhCs-/view?usp=sharing)
+
