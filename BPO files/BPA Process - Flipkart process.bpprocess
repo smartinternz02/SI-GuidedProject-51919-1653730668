@@ -1,0 +1,37 @@
+﻿<process name="Flipkart process" version="1.0" bpversion="7.0.1.49890" narrative="" byrefcollection="true" preferredid="b89a4bf2-c6fc-41a8-aed7-b2e13496cbe7" published="true">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="9bf7baef-6595-4acb-96a1-a159b651b267" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>61dc58bd-d7e1-47fd-a2bb-cb73190cdd2d</onsuccess>
+  </stage>
+  <stage stageid="363218b5-02db-4d01-95ec-c3bb3298186f" name="End" type="End">
+    <display x="15" y="120" />
+  </stage>
+  <stage stageid="cbb42a9b-b2fd-4f99-a874-0754c42e2d40" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="61dc58bd-d7e1-47fd-a2bb-cb73190cdd2d" name="Flipkart::Launch" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <onsuccess>2ad96307-da6c-4eb8-af7c-c5f7b1b6d9c4</onsuccess>
+    <resource object="Flipkart" action="Launch" />
+  </stage>
+  <stage stageid="2ad96307-da6c-4eb8-af7c-c5f7b1b6d9c4" name="Flipkart::Extract data from flipkart" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <onsuccess>4f672e67-2797-4a9c-b337-17ff1853bcf0</onsuccess>
+    <resource object="Flipkart" action="Extract data from flipkart" />
+  </stage>
+  <stage stageid="4f672e67-2797-4a9c-b337-17ff1853bcf0" name="Notification" type="Alert">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="60" />
+    <onsuccess>363218b5-02db-4d01-95ec-c3bb3298186f</onsuccess>
+    <alert expression="&quot;Process completed&quot;" />
+  </stage>
+</process>
